@@ -46,6 +46,7 @@ with open('output.txt', 'w') as output_file:
         # Write to output file
         output_file.write(f"R{total_in_till}, R{transaction_total}, R{paid}, R{paid - transaction_total}, {'-'.join(change_breakdown)}\n")
         total_in_till += paid - transaction_total
+        # do add anything else if there is a need
 
 # Write till float at the end of the output file
 with open('output.txt', 'a') as output_file:
